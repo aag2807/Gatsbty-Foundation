@@ -26,12 +26,13 @@ import {
   SectionFour,
   FormFive
 } from "../styles/IndexStyles"
+import Layout from '../components/layout';
 
 library.add(faHeart, faCode, faGem, fas, faReact, fab)
 
 export default () => {
   return (
-    <>
+    <Layout>
       <section style={{ position: "relative" }}>
         <Banner></Banner>
         <TextWrapper>
@@ -264,6 +265,6 @@ export default () => {
           </form>
         </FormFive>
       </section>
-    </>
+    </Layout>
   )
 }
