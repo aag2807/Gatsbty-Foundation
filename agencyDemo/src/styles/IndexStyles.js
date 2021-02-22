@@ -270,6 +270,27 @@ const Footer = styled.footer`
   }
 `;
 
+const Header = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:30px;
+  background-color: #1d242a;
+  color: #fff;
+  padding: 3rem 0;
+  
+  .menu__items {
+    display: flex;
+  }
+
+  .menu__items > * {
+    margin-right: 1rem;
+  }
+
+`;
+
+
 
 export {
   Banner,
@@ -283,5 +304,6 @@ export {
   SectionFour,
   FormFive,
   Footer,
+  Header,
 
 }

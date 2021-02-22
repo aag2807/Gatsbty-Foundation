@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from 'gatsby';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -8,10 +9,28 @@ import {
   faYoutube,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons"
-import { Footer } from "../styles/IndexStyles"
+
+import { Footer, Header, GenericH2, GenericPara } from "../styles/IndexStyles"
 
 const Layout = ( { children } ) => (
   <div>
+    <Header>
+      <GenericH2 none>
+        <Link to="/" style={{color: "#fff"}}>Code Nerd</Link>
+      </GenericH2>
+      <div className="menu__items">
+      <Link to="/works" style={{color: "#fff"}}>
+        <GenericPara lessSize lessSpacing grey>
+          Works
+        </GenericPara>
+      </Link>
+      <Link to="/about" style={{color: "#fff"}}>
+        <GenericPara lessSize lessSpacing grey>
+          About
+        </GenericPara>
+      </Link>
+      </div>
+    </Header>
     {children}
     <Footer>
       <div className="icons">
