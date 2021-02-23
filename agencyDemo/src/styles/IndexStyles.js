@@ -6,7 +6,10 @@ const Banner = styled.div`
     display: block;
     height: ${props => (props.parallax ? "80vh" : "100vh")};
     width: 100%;
-    background-image: ${props => (props.different ? "url('https://miro.medium.com/max/1187/1*0FqDC0_r1f5xFz3IywLYRA.jpeg')" : "url('https://wallpaperaccess.com/full/2906287.jpg')")};
+    background-image: ${props =>
+      props.different
+        ? "url('https://miro.medium.com/max/1187/1*0FqDC0_r1f5xFz3IywLYRA.jpeg')"
+        : "url('https://wallpaperaccess.com/full/2906287.jpg')"};
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -156,14 +159,14 @@ const GenericH2 = styled.h2`
 
 const SectionFour = styled.section`
   background-color: #505393;
-  color:#fff;
+  color: #fff;
   text-align: center;
-  
+
   .header__section4 {
     width: 66%;
     margin: 0 auto;
   }
-  
+
   .title__section4 {
     font-size: 3rem;
     padding: 1.35em 0;
@@ -175,8 +178,8 @@ const SectionFour = styled.section`
   }
 
   .grid__section4 {
-    display:grid;
-    grid-template-rows:1fr 1fr;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     width: 66%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -195,18 +198,17 @@ const SectionFour = styled.section`
   .flex__section4 > h2 {
     margin-left: 1rem;
   }
-
 `
 
 const FormFive = styled.div`
   position: absolute;
   z-index: 1;
-  width:80%;
+  width: 80%;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  color : white;
-  
+  color: white;
+
   form > .fields {
     display: grid;
     grid-template-columns: 1fr;
@@ -218,7 +220,7 @@ const FormFive = styled.div`
   textarea {
     appearance: none;
     font-size: 2rem;
-    background-color: rgba(144,144,144, 0.75);
+    background-color: rgba(144, 144, 144, 0.75);
     border: none;
   }
 
@@ -229,7 +231,7 @@ const FormFive = styled.div`
   }
   textarea {
     padding: 0.75em 1em;
-    resize:none;
+    resize: none;
   }
 
   .button__primary {
@@ -244,7 +246,7 @@ const FormFive = styled.div`
     letter-spacing: 0.225em;
     padding: 1.8rem 0.8rem;
     text-align: center;
-    text-decoration:none;
+    text-decoration: none;
     text-transform: uppercase;
   }
 `
@@ -252,36 +254,36 @@ const FormFive = styled.div`
 const Footer = styled.footer`
   padding: 6em 0 4em 0;
   background-color: #1d242a;
-  text-align:center;
+  text-align: center;
 
   .icons > * {
     cursor: pointer;
     margin-right: 1rem;
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .copyright {
-    color: rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 1.2rem;
     letter-spacing: 0.225em;
     padding: 0;
     text-transform: uppercase;
     margin-top: 1rem;
   }
-`;
+`
 
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:100%;
-  height:30px;
+  width: 100%;
+  height: 30px;
   background-color: #1d242a;
   color: #fff;
   padding: 3rem 0;
-  z-index:1000;
+  z-index: 1000;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
 
   .menu__items {
@@ -291,8 +293,7 @@ const Header = styled.header`
   .menu__items > * {
     margin-right: 1rem;
   }
-
-`;
+`
 
 const Works = styled.div`
   background-color: #fff;
@@ -303,19 +304,20 @@ const Works = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
-    justify-items:center;
+    justify-items: center;
   }
-`;
+`
 
 const GenericH3 = styled.h3`
-  font-size: 3rem;padding: ${props => (props.none ? "0" : "1.35em 0")};
+  font-size: 3rem;
+  padding: ${props => (props.none ? "0" : "1.35em 0")};
   color: ${props => (props.dark ? "#4E4852" : "#ffffff")};
   border-bottom: ${props => (props.none ? "0" : "2px solid #1d9c91")};
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   margin: 0;
-`;
-  
+`
+
 const GenereicParaAbout = styled.p`
   text-transform: uppercase;
   text-align: center;
@@ -323,8 +325,7 @@ const GenereicParaAbout = styled.p`
   font-size: ${props => (props.lessSize ? "1.5rem" : "2.5rem")};
   line-height: ${props => (props.lessSize ? "2rem" : "3rem")};
   color: ${props => (props.grey ? "#4E4852" : "#ffffff")};
-`;
-
+`
 
 export {
   Banner,
@@ -341,5 +342,5 @@ export {
   Header,
   Works,
   GenereicParaAbout,
-  GenericH3
+  GenericH3,
 }

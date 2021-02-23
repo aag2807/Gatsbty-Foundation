@@ -7,7 +7,7 @@ import {
   GenericPara,
   GenericH3,
   SectionTwo,
-  GenereicParaAbout
+  GenereicParaAbout,
 } from "../styles/IndexStyles"
 
 const About = () => {

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby';
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -12,23 +12,25 @@ import {
 
 import { Footer, Header, GenericH2, GenericPara } from "../styles/IndexStyles"
 
-const Layout = ( { children } ) => (
+const Layout = ({ children }) => (
   <div>
     <Header>
       <GenericH2 none>
-        <Link to="/" style={{color: "#fff"}}>Code Nerd</Link>
+        <Link to="/" style={{ color: "#fff" }}>
+          Code Nerd
+        </Link>
       </GenericH2>
       <div className="menu__items">
-      <Link to="/works" style={{color: "#fff"}}>
-        <GenericPara lessSize lessSpacing grey>
-          Works
-        </GenericPara>
-      </Link>
-      <Link to="/about" style={{color: "#fff"}}>
-        <GenericPara lessSize lessSpacing grey>
-          About
-        </GenericPara>
-      </Link>
+        <Link to="/works" style={{ color: "#fff" }}>
+          <GenericPara lessSize lessSpacing grey>
+            Works
+          </GenericPara>
+        </Link>
+        <Link to="/about" style={{ color: "#fff" }}>
+          <GenericPara lessSize lessSpacing grey>
+            About
+          </GenericPara>
+        </Link>
       </div>
     </Header>
     {children}
@@ -47,6 +49,6 @@ const Layout = ( { children } ) => (
       </div>
     </Footer>
   </div>
-); 
+)
 
 export default Layout

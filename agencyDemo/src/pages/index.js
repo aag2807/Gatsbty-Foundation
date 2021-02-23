@@ -24,9 +24,9 @@ import {
   GenericPara,
   GenericH2,
   SectionFour,
-  FormFive
+  FormFive,
 } from "../styles/IndexStyles"
-import Layout from '../components/layout';
+import Layout from "../components/layout"
 
 library.add(faHeart, faCode, faGem, fas, faReact, fab)
 
@@ -254,7 +254,7 @@ export default () => {
                 rows="7"
               ></textarea>
             </div>
-            <br/>
+            <br />
             <div className="actions">
               <input
                 type="submit"
