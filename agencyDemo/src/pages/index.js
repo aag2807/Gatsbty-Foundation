@@ -36,7 +36,7 @@ const encode = data => {
     .join("&")
 }
 
-class IndexPage extends Component {
+ export class IndexPage extends Component {
   constructor(props) {
     super(props)
     this.state = { name: "", email: "", message: "" }
